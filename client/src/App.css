@@ -1,0 +1,71 @@
+/* Full app layout: sidebar on the left, editor on the right */
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 40%;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Optional: Add chat history container above input */
+.chat-history {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+/* Textarea input styling */
+.sidebar textarea {
+  height: 150px; /* fixed height */
+  resize: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+/* Send button styling */
+.sidebar button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3;
+}
+
+/* Editor container */
+.react-monaco-editor-container {
+  width: 75%;
+  height: 100%;
+}
+
+/* Adjust editor props in React accordingly */
