@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 # ✅ Correct Gemini client setup
-genai.configure(api_key="AIzaSyA2WdMoDZD05CQciBv1D43mk-soCU6k48Q")
+genai.configure(api_key="")
 model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 @app.websocket("/ws")
